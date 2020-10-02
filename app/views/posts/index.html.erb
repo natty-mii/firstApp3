@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <h1>復習用　firstApp3</h1>
+  <%= link_to '新規投稿', 'posts/new' %>
+  <% @posts.each do |post|%>
+  <div class="post">
+    <div class="post-content">
+      <%= post.content %>
+    </div>
+    <div class="post-date">
+      <%= post.updated_at.strftime("%Y-%m-%d %H:%M") %>
+    </div>
+  </div>
+  <% end %>
+</div>

@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <h1>復習用　新規投稿ページ　</h1>
+
+  <%= form_with url: "/posts", method: :post, local: true do |form| %>
+    <%= form.text_field :content %>
+    <%= form.submit "新規投稿"%>
+  <% end %>
+</div>
